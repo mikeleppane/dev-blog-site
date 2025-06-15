@@ -115,15 +115,15 @@ graph TD
 
 ### Azure Services
 - **[Azure App Service](https://azure.microsoft.com/services/app-service/)** - Web application hosting
-- **[Azure CDN](https://azure.microsoft.com/services/cdn/)** - Content delivery network
-- **[Azure Blob Storage](https://azure.microsoft.com/services/storage/blobs/)** - Static asset storage
+- **[Azure CosmosDB](https://azure.microsoft.com/services/cosmos-db/)** - Static asset storage
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
 - [Rust](https://rustup.rs/) (latest stable version)
-- [Trunk](https://trunkrs.dev/) for building WASM applications
+- [mold](https://github.com/rui314/mold) - Fast linker for Rust
+- [Docker](https://www.docker.com/) (for containerization)
 - [Node.js](https://nodejs.org/) for Tailwind CSS processing
 
 ### Installation
@@ -139,10 +139,7 @@ graph TD
    cargo build
    ```
 
-3. **Install Trunk**
-   ```bash
-   cargo install trunk
-   ```
+3. **Install leptos** checkout from here how to setup leptos [leptos ssr](https://book.leptos.dev/ssr/21_cargo_leptos.html)
 
 4. **Install Tailwind CSS (if using standalone)**
    ```bash
@@ -153,20 +150,20 @@ graph TD
 
 1. **Start the development server**
    ```bash
-   trunk serve
+   cargo leptos watch
    ```
 
 2. **Open your browser**
-   Navigate to `http://localhost:8080`
+   Navigate to `http://localhost:3000`
 
 3. **Watch for changes**
-   Trunk automatically rebuilds and hot-reloads on file changes
+    The server will automatically reload on file changes.
 
 ### Build for Production
 
 ```bash
 # Build optimized WASM bundle
-trunk build --release
+cargo leptos build --release
 
 # The dist/ folder contains the production build
 ```
