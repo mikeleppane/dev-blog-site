@@ -1,0 +1,9 @@
+//pub mod blog_detail;
+pub mod blog_content;
+pub mod blog_detail;
+//pub mod blog_editor;
+pub mod blog_list;
+pub mod footer;
+pub mod latest_blog_posts;
+pub mod navigation;
+pub mod tech_cards;

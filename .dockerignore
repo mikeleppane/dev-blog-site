@@ -1,0 +1,236 @@
+functions/
+end2end/
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Documentation
+README.md
+LICENSE
+CHANGELOG.md
+docs/
+
+# Development files
+# .env*
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules and package files
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Rust target directory (will be built inside container)
+target/
+
+# Leptos output (will be generated during build)
+pkg/
+dist/
+.leptos/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+*.lcov
+.nyc_output
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+*.old
+
+# Editor files
+*~
+.#*
+#*#
+rust-project.json
+
+# Test files
+test-results/
+tests/
+
+# Docker files
+Dockerfile*
+.dockerignore
+docker-compose*.yml
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+.circleci/
+azure-pipelines.yml
+
+# Local development
+justfile
+.justfile
+
+# Azure
+.azure/
+local.settings.json
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Certificates and keys
+*.pem
+*.crt
+*.key
+*.p12
+*.pfx
+
+# Build artifacts that shouldn't be in container
+build/
+out/
+
+# IDE settings
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+
+# Flamegraph and profiling
+flamegraph.svg
+perf.data*
+criterion/
+
+# Backup and temporary files
+*.swp
+*.swo
+*.tmp
+*~
+
+# Local configuration
+config.local.*
+# .env.local
+
+# Scripts (unless needed for container)
+scripts/
+tools/
+
+# Examples and samples
+examples/
+samples/
+demo/
+
+# Archives
+*.zip
+*.tar.gz
+*.tar.bz2
+*.rar
+*.7z
+
+# Large media files (unless specifically needed)
+*.mov
+*.mp4
+*.avi
+*.wmv
+*.flv
+*.webm
+*.mkv
+
+# Image source files
+*.psd
+*.ai
+*.sketch
+*.fig
+
+# Python virtual environments
+# Created by https://www.toptal.com/developers/gitignore/api/python
+# Edit at https://www.toptal.com/developers/gitignore?templates=python
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+functions/**/__pycache__/
+functions/**/*.py[cod]
+functions/**/*$py.class
+
+# C extensions
+functions/**/*.so
+
+# Distribution / packaging
+functions/**/.Python
+functions/**/build/
+functions/**/develop-eggs/
+functions/**/dist/
+functions/**/downloads/
+functions/**/eggs/
+functions/**/.eggs/
+functions/**/lib/
+functions/**/lib64/
+functions/**/parts/
+functions/**/sdist/
+functions/**/var/
+functions/**/wheels/
+functions/**/share/python-wheels/
+functions/**/*.egg-info/
+functions/**/.installed.cfg
+functions/**/*.egg
+functions/**/MANIFEST
+
+
+# Unit test / coverage reports
+functions/**/htmlcov/
+functions/**/.tox/
+functions/**/.nox/
+functions/**/.coverage
+functions/**/.coverage.*
+functions/**/.cache
+functions/**/nosetests.xml
+functions/**/coverage.xml
+functions/**/*.cover
+functions/**/*.py,cover
+functions/**/.hypothesis/
+functions/**/.pytest_cache/
+functions/**/cover/
+
+# Environments
+# .env
+.venv
+functions/**/.venv
+functions/**/env/
+functions/**/venv/
+functions/**/ENV/
+functions/**/env.bak/
+functions/**/venv.bak/
+
+# mypy
+functions/**/.mypy_cache/
+functions/**/.dmypy.json
+functions/**/dmypy.json
+.mypy_cache/
+.dmypy.json
+dmypy.json
+# ruff
+functions/**/.ruff_cache/
+.ruff_cache/
+html/
